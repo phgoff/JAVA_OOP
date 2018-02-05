@@ -7,6 +7,8 @@ public class Point{
 	 this.z = z;
 
 	}
+	public Point(){
+	}
 	public float getx(){
 	 return this.x;	
 	}
@@ -30,10 +32,10 @@ public class Point{
 	 this.y =y;
 	 this.z =z;
 	}
-	public void setPoint(Point pt){
-	 this.x = pt.getx();
-	 this.y = pt.gety();
-	 this.z = pt.getz();
+	public void setPoint(Point np){
+	 this.x = np.getx();
+	 this.y = np.gety();
+	 this.z = np.getz();
 	}
 
 
