@@ -11,7 +11,7 @@ public class Main{
 System.out.println("Point x y z : " + pt.getx()+pt.gety()+pt.getz());
 System.out.println("a.Point x y z : " + a.getx()+a.gety()+a.getz());
 	
-	
+
 
   }
 
