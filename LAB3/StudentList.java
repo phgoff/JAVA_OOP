@@ -16,17 +16,18 @@ public class StudentList{
 					return i;
 				}
 			}
-
 		}
 		public removeStudentBystCode(String stCode){
 		}
 
 		public ShowAllStudentinfo(){
+			for(Student student: this.StudentList){
+				System.out.println(student.toString());
+			}
 		}
 
-		
-
 		public getNumberofStudent(){
+			return this.StudentList.size();
 		}
 
 
