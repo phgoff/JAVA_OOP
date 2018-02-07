@@ -1,18 +1,18 @@
 import java.util.*;
 public class StudentList{
-		private ArrayList<Student> stlist;
+		private ArrayList<Student> stdlist;
 
-		public	StudentList(){
-			this.stlist = new ArrayList<Student>();
+		public StudentList(){
+			this.stdlist = new ArrayList<Student>();
 		}
 
 		public void addStudent(Student std){
-			this.stlist.add(std);
+			this.stdlist.add(std);
 		}
 
 		public int searchStudentBystCode(String stCode){
-			for(int i=0; i<this.stlist.size(); i++){
-				if (this.stlist.get(i).getCode() == stCode){
+			for(int i=0; i<this.stdlist.size(); i++){
+				if (this.stdlist.get(i).getCode() == stCode){
 					return i;
 				}
 			}
@@ -20,13 +20,13 @@ public class StudentList{
 		public removeStudentBystCode(String stCode){
 		}
 
-		public ShowAllStudentinfo(){
+		public void ShowAllStudentinfo(){
 			for(Student student: this.StudentList){
 				System.out.println(student.toString());
 			}
 		}
 
-		public getNumberofStudent(){
+		public int getNumberofStudent(){
 			return this.StudentList.size();
 		}
 
