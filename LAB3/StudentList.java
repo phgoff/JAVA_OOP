@@ -17,17 +17,22 @@ public class StudentList{
 				}
 			}
 		}
-		public removeStudentBystCode(String stCode){
+		public void removeStudentBystCode(String stCode){
+			for(int i=0; i<this.stdlist.size(); i++){
+				if (this.stdlist.get(i).getCode() == stCode){
+					stdlist.remove(i);
+				}
+			}
 		}
 
 		public void ShowAllStudentinfo(){
-			for(Student student: this.StudentList){
+			for(Student student: this.stdlist){
 				System.out.println(student.toString());
 			}
 		}
 
 		public int getNumberofStudent(){
-			return this.StudentList.size();
+			return this.stdlist.size();
 		}
 
 
