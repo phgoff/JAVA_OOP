@@ -1,7 +1,8 @@
+
 public class Student {
-  protected String stCode; // student code 
-  protected String name;  
-  protected double gpa;
+  private String stCode; // student code 
+  private  String name;  
+  private double gpa;
   public Student(){ 
   }
   public Student(String c, String nm){
@@ -29,3 +30,4 @@ public class Student {
 	  String s = stCode + " " + name + " " + gpa;
 	  return s;
   } 
+}

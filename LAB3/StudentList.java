@@ -1,39 +1,40 @@
-import java.util.*;
-public class StudentList{
-		private ArrayList<Student> stdlist;
+import java.util.ArrayList;
 
-		public StudentList(){
-			this.stdlist = new ArrayList<Student>();
-		}
-
-		public void addStudent(Student std){
-			this.stdlist.add(std);
-		}
-
-		public int searchStudentBystCode(String stCode){
-			for(int i=0; i<this.stdlist.size(); i++){
-				if (this.stdlist.get(i).getCode() == stCode){
-					return i;
-				}
+public class StudentList {
+	
+	private ArrayList<Student> stdList;
+	// Constructor
+	public StudentList() {
+		this.stdList = new ArrayList<Student>();
+	}
+	public void addStudent(Student std) {
+		this.stdList.add(std);
+	}
+	
+	public Student searchStudentBystCode(String stCode){
+		for(int i=0;i<this.stdList.size();i++) {
+			if(this.stdList.get(i).getCode() == stCode) {
+				return this.stdList.get(i);
 			}
 		}
-		public void removeStudentBystCode(String stCode){
-			for(int i=0; i<this.stdlist.size(); i++){
-				if (this.stdlist.get(i).getCode() == stCode){
-					stdlist.remove(i);
-				}
+		return new Student();
+	}
+	public void removeStudentBystCode(String stCode){
+		for(int i=0;i< this.stdList.size();i++) {
+			if(this.stdList.get(i).getCode() == stCode ) {
+				stdList.remove(i);
 			}
 		}
+	}
 
-		public void ShowAllStudentinfo(){
-			for(Student student: this.stdlist){
-				System.out.println(student.toString());
-			}
+	public void ShowAllStudentinfo(){
+		for(Student student: this.stdList){
+			System.out.println(student.toString());
 		}
+	}
 
-		public int getNumberofStudent(){
-			return this.stdlist.size();
-		}
-
+	public int getNumberofStudent(){
+		return this.stdList.size();
+	}
 
 }
