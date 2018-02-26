@@ -24,9 +24,7 @@ public class Student extends Person {
 	public void printDetails() {
 		System.out.println("---Student---");
 		super.printDetails();
-        System.out.println("Major: " + major +" GPA: " + gpa);
-     
-        
+        System.out.println("Major: " + major +" GPA: " + gpa);       
     }
 	
 }
