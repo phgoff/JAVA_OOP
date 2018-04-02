@@ -17,7 +17,6 @@ public class SwingCounter extends JFrame{
 		jb = new JButton("count");
 
 		countn = 0;
-		
 		jb.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e){
 					countn++;
@@ -27,7 +26,6 @@ public class SwingCounter extends JFrame{
 		});
 
 		Container c = getContentPane();
-
 		c.setLayout(new FlowLayout(FlowLayout.LEFT,10,20));
 
 		c.add(jlb);
