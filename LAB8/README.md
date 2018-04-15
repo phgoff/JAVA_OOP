@@ -1,0 +1,4 @@
+# Exception
+## Types
+* Unchecked
+* Checked
