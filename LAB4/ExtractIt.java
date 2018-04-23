@@ -13,7 +13,7 @@ public class ExtractIt{
 	public static void main(String[] args) {
 		
 		System.out.println(extract("http://example.com/files/public_files/test.zip"));
-		System.out.println(extract("www.abc.com/pub/*aaa.html"));
+		System.out.println(extract("www.abc.com/pub/**aaa.html"));
 	}
 
 }

@@ -1,3 +1,4 @@
+import java.io.*;
 public class Dice{
 
 	private int face;
@@ -13,8 +14,13 @@ public class Dice{
 	public int getFace(){
 		return this.face;
 	}
+
 	public String toString(){
-		return System.out.println("Face: " + face);
-	}
+
+		return "Face: " + this.face;
+	
+		
+
+}
 
 }

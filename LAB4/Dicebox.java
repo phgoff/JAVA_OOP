@@ -1,10 +1,10 @@
 import java.util.*;
 public class Dicebox{
 
-	private Arraylist<Dice> box;
+	private ArrayList<Dice> box;
 
 	public Dicebox(){
-			box = new Arraylist<Dice>();
+			box = new ArrayList<Dice>();
 
 	}
 	public void add(Dice x){
@@ -12,7 +12,7 @@ public class Dicebox{
 	}
 	public void shake(){
 		for(Dice di:this.box)
-			box.d1.roll();
+			di.roll();
 
 	}
 	public int getTotal(){
